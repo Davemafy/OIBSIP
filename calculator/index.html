@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | Web App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+Runic:regular" rel="stylesheet" />
+</head>
+<body class="lato-bold">
+    <main id="calculator">
+        <div class="inner">
+            <div class="output-box">
+                <small id="expression"></small>
+                <h1 id="output"></h2>
+            </div>
+            <div class="keys">
+                <button class="row-one" data-name="(" data-type="operator" >(</button>
+                <button class="row-one" data-name=")" data-type="operator">)</button>
+                <button class="row-one" data-name="ans" data-type="operand" data-role="ans">ans</button>
+                <button class="row-one" data-name="del" data-type="operand" data-role="delete">del</button>
+                <button class="row-one" data-name="clear" data-type="operand" data-role="clear">clear</button>
+                <button data-name="7" data-type="number">7</button>
+                <button data-name="8" data-type="number">8</button>
+                <button data-name="9" data-type="number">9</button>
+                <button data-name="%" data-type="operator">%</button>
+                <button data-name="√" data-type="operator">√</button>
+                <button data-name="4" data-type="number">4</button>
+                <button data-name="5" data-type="number">5</button>
+                <button data-name="6" data-type="number">6</button>
+                <button data-name="×" data-type="operator">×</button>
+                <button data-name="÷" data-type="operator">÷</button>
+                <button data-name="1" data-type="number">1</button>
+                <button data-name="2" data-type="number">2</button>
+                <button data-name="3" data-type="number">3</button>
+                <button data-name="+" data-type="operator">+</button>
+                <button data-name="-" data-type="operator">-</button>
+                <button data-name="." data-type="operator">.</button>
+                <button data-name="0" data-type="number">0</button>
+                <button data-name="±" data-type="operator">±</button>
+                <button id="calculate" data-name="ENTER">ENTER</button>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

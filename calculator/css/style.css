@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --surface-pri: #4d8ac8;
+  --surface-acc: #ebf5ff;
+  --bg-pri: #a2d0fa;
+  --bg-acc: #cce5ff;
+
+  --clr: #173b5f;
+
+  --corner-min: 0.5rem;
+  --corner-max: 1rem;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  background: var(--surface-pri);
+  padding: 1.75rem;
+  color: var(--clr);
+
+  font-family: system-ui;
+  font-family: "Lexend Deca", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  
+  display: grid;
+  place-items: center;
+}
+
+main#calculator {
+  --gap: 0.5rem;
+  background: var(--surface-acc);
+  padding: 1.75rem 1rem;
+  width: fit-content;
+  border-radius: var(--corner-max);
+}
+
+main#calculator .inner {
+  display: flex;
+  gap: var(--gap);
+  flex-flow: column;
+}
+
+.output-box,
+button {
+  border-radius: var(--corner-min);
+}
+
+.output-box {
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+  min-height: 4.1875rem;
+}
+
+.output-box #expression {
+  color: #4d8ac8;
+  font-size: .75rem;
+}
+
+.output-box #output {
+    text-align: end;
+    font-size: 1.7rem;
+}
+
+main#calculator .inner .keys {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(5, 1fr);
+}
+
+button {
+  display: grid;
+  place-content: center;
+  border: 0;
+  width: 2.6875rem;
+  height: 2.75rem;
+  font-family: inherit;
+  font-weight: 600;
+  color: var(--clr);
+}
+
+
+[data-type="operator"] ,
+[data-type="operand"] {
+  --clr: #4d8ac8;
+  background: var(--bg-pri);
+  font-size: 1rem;
+}
+
+.output-box,
+[data-type="number"] {
+  background: var(--bg-acc);
+  font-size: 1rem;
+}
+
+.row-one {
+  height: 2.125rem;
+  font-size: 0.75rem;
+}
+
+#calculate {
+  --clr: #ebf5ff;
+  background: var(--surface-pri);
+  grid-column: span 2;
+  width: 100%;
+  font-size: 0.7rem;
+}
