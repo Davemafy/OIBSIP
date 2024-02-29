@@ -55,12 +55,13 @@ button {
 .output-box {
   padding: 0.4rem 1rem;
   font-weight: 600;
-  min-height: 4.1875rem;
+  min-height: 4.2rem;
 }
 
 .output-box #expression {
   color: #4d8ac8;
   font-size: .75rem;
+  min-height: 1rem;
 }
 
 .output-box #output {
@@ -86,17 +87,21 @@ button {
 }
 
 
-[data-type="operator"] ,
-[data-type="operand"] {
+[data-operation] ,
+[data-operand] {
   --clr: #4d8ac8;
   background: var(--bg-pri);
   font-size: 1rem;
 }
 
 .output-box,
-[data-type="number"] {
+[data-number] {
   background: var(--bg-acc);
   font-size: 1rem;
+}
+
+.db-bg{
+  background: var(--bg-pri);
 }
 
 .row-one {
@@ -110,4 +115,22 @@ button {
   grid-column: span 2;
   width: 100%;
   font-size: 0.7rem;
+}
+
+button:hover{
+  background: var(--clr);
+  color: var(--bg-acc);
+  transition: 
+    background-color  100ms ease-in-out,
+    color  100ms ease-in;
+}
+
+[data-number]:active{
+  transition: 0s;
+  font-size: 1.2rem;
+}
+
+
+#calculate:hover {
+  background: hsl(210, 45%, 33%);
 }
