@@ -16,6 +16,10 @@
   --corner-max: 1rem;
 }
 
+html{
+  font-size: clamp(16px, 2.5vw, 20px);
+}
+
 body {
   min-height: 100vh;
   min-height: 100svh;
