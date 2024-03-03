@@ -108,7 +108,11 @@ function render({ id, value, date, time, completed }) {
 
     let todo = document.createElement("li");
     let infoDiv = document.createElement("div");
+<<<<<<< HEAD
     let title = document.createElement("h2");
+=======
+    let title = document.createElement("h1");
+>>>>>>> 9605360a097b093c217e6f3c18a5aa9ae33f5909
     let timeStamp = document.createElement("div");
     let dateEl = document.createElement("p");
     let timeEl = document.createElement("p");
