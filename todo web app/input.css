@@ -49,6 +49,7 @@
 }
 
 html {
+    color-scheme: light dark;
   scroll-behavior: smooth;
   font-size: clamp(16px, 2.5vw, 20px);
 }
@@ -99,7 +100,7 @@ body.dark {
   outline-width: 0.11rem;
   padding: 1rem 1rem;
   padding-bottom: 1.4rem;
-  box-shadow: -3px 10px 0rem #eee;
+  box-shadow: -3px 5px 0rem #eee;
   
   .timestamp {
       bottom: 0.5rem;
