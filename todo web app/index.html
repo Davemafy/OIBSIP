@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>HTML</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body class="font-sans bg-[whitemoke]">
+        <header class="px-6">
+            <nav
+                class="mx-auto py-3 pt-5 max-w-screen-md flex items-center justify-between border-b"
+            >
+                <h1 class="text-xl opacity-50 ">Todo List </h1>
+                <button id="menu-btn"></button>
+            </nav>
+        </header>
+        <main class="p-4">
+            <form
+                class="mx-auto max-w-screen-md gap-3 flex flex-wrap justify-end"
+            >
+                <input
+                    id="todo-input"
+                    class="w-full p-2 px-3 rounded-xl border"
+                    placeholder="What do you plan todo ?"
+                    autofocus
+                    type="text"
+                />
+                <p
+                    id="switch"
+                    class="p-1.5 flex items-center justify-center gap-1.5 text-sm text-gray-300 text-center bg-white rounded-2xl mr-auto px-4 w-1/2 gfont-medium border"
+                >
+                    <span class="active">pending </span> / all
+                </p>
+                <button
+                    id="add-todo"
+                    class="p-1.5 px-8 bg-[#1111] rounded-full border text-gray-100 bg-green-600"
+                >
+                    Add todo
+                </button>
+            </form>
+            <div id="todos" class="mx-auto max-w-screen-md ">
+                <div id="top-bar" class="flex items-center justify-between mt-4 px-2">
+                    <h3 id="status" class=" text-gray-700">No todo's left</h3>
+                    <div class="tools ">
+                        <button id="sort" class="font-semibold border rounded-2xl p-1 px-4">
+                            Sort -
+                        </button>
+                    </div>
+                </div>
+                <ul class="mt-4" id="todo-list">
+                </ul>
+            </div>
+        </main>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .todo {
+        @apply mb-4 relative  transition  flex items-center justify-between p-3 pb-4 rounded-lg border decoration-green-500;
+    }
+    .todo.completed {
+        @apply transition grayscale line-through opacity-50;
+    }
+    .btn-div {
+        @apply flex flex-row gap-2;
+    }
+    .check-btn {
+        @apply outline outline-1 outline-green-500  text-green-500 text-sm p-1 px-2 rounded hover:text-white hover:bg-green-500 active:text-white active:bg-green-500;
+    }
+    .todo.completed .check-btn {
+        @apply text-white bg-green-500;
+    }
+    .timestamp {
+        @apply flex bottom-1 left-2  absolute gap-2 items-center;
+    }
+    .delete-btn {
+        @apply relative border overflow-clip 
+        				text-sm flex rounded outline 
+        				outline-1 outline-gray-100
+        				transition hover:bg-red-500
+        				text-gray-500 p-1 px-2
+        				hover:text-[#fff] font-semibold
+        				active:bg-red-500 
+        				active:text-[#fff];
+    }
+    .title {
+        @apply text-xl font-semibold opacity-70;
+    }
+    .date,
+    .time {
+        @apply text-[.58rem] opacity-50;
+    }
+    #switch .active {
+        @apply text-gray-500 font-semibold text-lg;
+    }
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../fonts/SFUIDisplay-Regular.otf");
+}
+
+html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+    font-size: clamp(16px, 2.5vw, 20px);
+}
+
+body{
+    padding: 1rem;
+    background: #000;
+}
+
+body.dark {
+    background: #242424;
+}
+
+body.dark .todo {
+    background: #fff;
+    color: #242424;
+}
+
+input:focus {
+    outline-color: gray;
+}
+
+.animate-in {
+    max-width: 80%;
+    opacity: 0.5;
+}
+
