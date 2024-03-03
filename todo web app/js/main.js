@@ -26,7 +26,7 @@ if (todosFromStorage) {
 }
 
 const todoInput = document.querySelector("#todo-input");
-const addtodoBtn = document.querySelector("#add-todo");
+const addTodoBtn = document.querySelector("#add-todo");
 
 
 switcher.addEventListener("click", () => {
@@ -48,7 +48,7 @@ switcher.addEventListener("click", () => {
     reflow();
 });
 
-addtodoBtn.addEventListener("click", e => {
+addTodoBtn.addEventListener("click", e => {
     e.preventDefault();
     // Check For User input
     if (todoInput.value) {
@@ -108,8 +108,8 @@ function render({ id, value, date, time, completed }) {
 
     let todo = document.createElement("li");
     let infoDiv = document.createElement("div");
-    let title = document.createElement("h2");
-   let timeStamp = document.createElement("div");
+    let title = document.createElement("h1");
+    let timeStamp = document.createElement("div");
     let dateEl = document.createElement("p");
     let timeEl = document.createElement("p");
     let btnDiv = document.createElement("div");
