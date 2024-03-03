@@ -18,6 +18,8 @@
 
 html{
   font-size: clamp(16px, 2.5vw, 20px);
+  scroll-behavior: smooth;
+  color-scheme: light dark;
 }
 
 body {

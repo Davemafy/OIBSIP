@@ -18,8 +18,8 @@ class Calculator {
   }
 
   clear() {
-    this.currentOperand = "" || val
-    this.previousOperand = "" || val
+    this.currentOperand = "" 
+    this.previousOperand = ""
     this.expression = "";
     this.operation = undefined;
   }
@@ -58,14 +58,9 @@ class Calculator {
         computation = prev * current ** 0.5;
         break;
       case "(":
-        try{
-          computation = eval(this.expression);
-        } catch{
-          
-        }
         break;
       case ")":
-        computation = prev * current ** 0.5;
+        // computation = prev * current ** 0.5;
         break;
       default:
         return;
